@@ -2,297 +2,184 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Meeteors | Connecting People, Creating Memories</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial, Helvetica, sans-serif;
-color:#333;
-line-height:1.6;
-}
-
-.hero{
-
-height:100vh;
-
-background:
-linear-gradient(
-rgba(0,0,0,.45),
-rgba(0,0,0,.45)
-),
-url("./images/homepagesocial.png");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-color:white;
-}
-
-.hero-content{
-max-width:850px;
-}
-
-.hero h1{
-font-size:4rem;
-font-weight:300;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:1.4rem;
-margin-bottom:25px;
-}
-
-.button{
-
-display:inline-block;
-
-padding:14px 28px;
-
-background:#00b7b7;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:8px;
-
-font-weight:bold;
-
-transition:.3s;
-}
-
-.button:hover{
-opacity:.9;
-}
-
-.section{
-
-padding:80px 20px;
-text-align:center;
-
-}
-
-.features{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(220px,1fr));
-
-gap:30px;
-
-margin-top:50px;
-
-}
-
-.card{
-
-padding:30px;
-
-border-radius:12px;
-
-box-shadow:
-0 4px 15px rgba(0,0,0,.08);
-
-}
-
-.footer{
-
-background:#263648;
-
-color:white;
-
-padding:60px 40px;
-
-display:flex;
-
-flex-direction:column;
-
-align-items:flex-end;
-
-}
-
-.footer-content{
-
-width:400px;
-
-text-align:left;
-
-}
-
-.copyright{
-
-margin-top:50px;
-
-font-size:0.95rem;
-
-opacity:.9;
-
-width:100%;
-
-text-align:center;
-
-}
-
-.footer a{
-c
-olor:#56b5ff;
-
-text-decoration:none;
-
-}
-
-.contact{
-
-margin-top:25px;
-
-line-height:1.8;
-
-}
-
-@media(max-width:768px){
-
-.footer{
-
-align-items:center;
-
-padding:50px 25px;
-
-}
-
-.footer-content{
-
-width:100%;
-
-max-width:420px;
-
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meeteors LLC | Software & SaaS Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1a202c;
+            line-height: 1.6;
+            background-color: #f8fafc;
+        }
+
+        .hero {
+            padding: 100px 20px 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #0f172a;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #475569;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e0f2fe;
+            color: #0369a1;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 60px 20px 30px;
+            font-size: 0.95rem;
+        }
+
+        .footer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .footer a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            max-width: 1000px;
+            margin: 40px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            text-align: center;
+            font-size: 0.875rem;
+        }
+    </style>
 </head>
 
 <body>
 
-<section class="hero">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Building Modern Software & SaaS Solutions</h1>
+            <p>
+                Meeteors LLC designs, develops, and operates specialized web platforms and software tools for businesses and specialized domains.
+            </p>
+        </div>
+    </section>
 
-<div class="hero-content">
+    <section class="section">
+        <h2 class="section-title">Our Products & Platforms</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Featured Product</span>
+                <h3>StateBid</h3>
+                <p>
+                    A procurement intelligence platform designed to streamline historical procurement analysis, bid tracking, and state contract insights for contractors and vendors.
+                </p>
+            </div>
 
-<h1>Connecting People, Creating Memories</h1>
+            <div class="card">
+                <span class="badge">SaaS Development</span>
+                <h3>Custom Web Applications</h3>
+                <p>
+                    Scalable cloud architectures built with modern frameworks to deliver high-performance tools, analytics, and user experiences.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<p>
-Your community for events and connections.
-Discover events, connect with people,
-create memories.
-</p>
-
-<a href="#coming-soon" class="button">
-Coming Soon
-</a>
-
-</div>
-
-</section>
-
-<section id="coming-soon" class="section">
-
-<h2>Coming Soon</h2>
-
-<p style="margin-top:20px;max-width:700px;margin-left:auto;margin-right:auto;">
-
-Meeteors is your next destination for meaningful
-connections. Stay tuned as we prepare to launch
-an innovative platform that brings people together.
-
-</p>
-
-<div class="features">
-
-<div class="card">
-
-<h3>⭐ Connect</h3>
-
-<p>
-Meet like-minded individuals and build lasting relationships.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>💬 Share</h3>
-
-<p>
-Share experiences and create meaningful memories.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🎉 Celebrate</h3>
-
-<p>
-Attend events and discover new communities.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<footer class="footer">
-
-<div class="contact">
-<h2>Contact Us</h2>
-
-<p>
-Questions? We'd love to hear from you.
-</p>
-
-<br>
-
-<p>
-Email:
-<a href="mailto:support@meeteors.com">
-support@meeteors.com
-</a>
-</p>
-
-<p style="margin-top:10px;">
-Response time: Within 48 hours
-</p>
-
-</div>
-
-</div>
-
-<div class="copyright">
-
-<p>
-© 2026 Meeteors. All rights reserved.
-</p>
-
-</footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h3 style="color: white; margin-bottom: 10px;">Meeteors LLC</h3>
+                <p>An Ohio Limited Liability Company</p>
+                <p>6545 Market Avenue North STE 100</p>
+                <p>Canton, OH 44721 US</p>
+            </div>
+            <div>
+                <h3 style="color: white; margin-bottom: 10px;">Contact Support</h3>
+                <p>Email: <a href="mailto:support@meeteors.com">support@meeteors.com</a></p>
+                <p>Response Time: Within 24–48 hours</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Meeteors LLC. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 
